@@ -681,6 +681,7 @@ height: 50px;
 
 .newsletterButtom{
   display: flex;
+  justify-content: center;
   background: #2196F3;
   color: #FFFFFF;
   fill: #FFFFFF;
