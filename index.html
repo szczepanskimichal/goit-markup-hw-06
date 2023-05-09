@@ -66,7 +66,39 @@
           <div class="modal">
 
 <!-- This is modal -->
-
+<section>
+  <p>Leave your details in the form below</p>
+  <div>
+    <p>Name</p>
+    <form name="contact details" autocomplete="on" novalidate>
+      <label>
+        <input class="contacts" type="text" name="name" />
+      </label>
+      <p>Telephone</p>
+      <label>
+        <input class="contacts" type="text" name="telephone" />
+      </label>
+      <p>Email</p>
+      <label>
+        <input class="contacts" type="text" name="email" />
+      </label>
+      <p>Comment</p>
+      <label>
+        <textarea
+          class="comment"
+          type="text"
+          name="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+    </form>
+    <label>
+      <input type="checkbox" name="hobby" /> I declare that I accept the
+      Regulations and the Privacy Policy.
+    </label>
+  </div>
+  <button type="button">Send</button>
+</section>
         <div>
         <button class="button-close" data-modal-close type="button">
           <svg width="18px" height="18px"><use href="./images/icons.svg#icon-close"></use></svg>
@@ -446,9 +478,9 @@
             </div>
             <form class="newsletter" name="newsletter" autocomplete="off" novalidate>
                   <p class="newsletterText">Subscribe to the newsletter</p>
-              <label class="labelFooter">
+              
                 <input type="email" name="email" placeholder="E-mail" width="358"
-              height="50"/></label>
+              height="50"/>
             
               <button class="newsletterButtom" type="button" width="200"
                   height="50">Sign up<svg width="24" height="24">
