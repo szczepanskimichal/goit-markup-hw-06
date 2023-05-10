@@ -66,39 +66,73 @@
           <div class="modal">
 
 <!-- This is modal -->
-<section>
-  <p>Leave your details in the form below</p>
-  <div>
-    <p>Name</p>
-    <form name="contact details" autocomplete="on" novalidate>
-      <label>
-        <input class="contacts" type="text" name="name" />
-      </label>
-      <p>Telephone</p>
-      <label>
-        <input class="contacts" type="text" name="telephone" />
-      </label>
-      <p>Email</p>
-      <label>
-        <input class="contacts" type="text" name="email" />
-      </label>
-      <p>Comment</p>
-      <label>
-        <textarea
-          class="comment"
-          type="text"
-          name="comment"
-          placeholder="Enter text"
-        ></textarea>
-      </label>
-    </form>
-    <label>
-      <input type="checkbox" name="hobby" /> I declare that I accept the
-      Regulations and the Privacy Policy.
+<p class="form-header">Zostaw swoje dane w formularzu poniżej</p>
+<form class="form-list">
+  <label class="form-label" for="user_name">Imię</label>
+  <input
+    name="user_name"
+    class="form-input"
+    id="user_name"
+    type="text"
+  />
+  <svg class="icon-name" width="18" height="18">
+    <use
+      href="./images/icons.svg#icon-person-black-18dp-1-2"
+    ></use>
+  </svg>
+  <label class="form-label" for="phone_number">Telefon</label>
+  <input
+    name="phone_number"
+    class="form-input"
+    id="phone_number"
+    type="tel"
+  />
+  <svg class="icon-phone" width="18" height="18">
+    <use
+      href="./images/icons.svg#icon-phone-black-18dp-1-1"
+    ></use>
+  </svg>
+  <label class="form-label" for="email">Email</label>
+  <input
+    name="email"
+    class="form-input"
+    id="email"
+    type="email"
+  />
+  <svg class="icon-mail" width="18" height="18">
+    <use
+      href="./images/icons.svg#icon-email-black-18dp-1-1"
+    ></use>
+  </svg>
+  <label class="form-label" for="comment">Komentarz</label>
+  <textarea
+    name="comment"
+    class="comment"
+    id="comment"
+    placeholder="Wprowadź tekst"
+  ></textarea>
+  <div class="checkbox">
+    <input
+      name="check"
+      class="checkbox-input"
+      type="checkbox"
+      id="check"
+    />
+    <label for="check" class="checkbox-label">
+      Oświadczam iż akceptuję&nbsp;
+      <a href="#">Regulamin</a>
+      &nbsp;i&nbsp;
+      <a href="#">Politykę Prywatności</a>.
+    </label>
+    <label for="check" class="checkbox-label">
+      Oświadczam iż akceptuję&nbsp;
+      <a href="#">Regulamin</a>
+      &nbsp;i&nbsp;
+      <a href="#">Politykę Prywatności</a>.
     </label>
   </div>
-  <button type="button">Send</button>
-</section>
+  <button class="form-button" type="submit">Wyślij</button>
+</form>
         <div>
         <button class="button-close" data-modal-close type="button">
           <svg width="18px" height="18px"><use href="./images/icons.svg#icon-close"></use></svg>
@@ -476,15 +510,32 @@
                 </li>
               </ul>
             </div>
-            <form class="newsletter" name="newsletter" autocomplete="off" novalidate>
+
+            <div class="newsletter">
+              <p>SIGN UP FOR NEWSLETTERS</p>
+              <form>
+                <input
+                  type="email"
+                  name="newsletter_email"
+                  placeholder="E-mail"
+                />
+                <button type="submit">
+                  Zapisz się
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+            <!-- <form class="newsletter" name="newsletter" autocomplete="off" novalidate>
                   <p class="newsletterText">Subscribe to the newsletter</p>
               
                 <input class="inpoutFooter" type="email" name="email" placeholder="E-mail"/>
-                <button class="button" type="button" width="200"
-                  height="50">Sign up<svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
+                <button class="button" type="button" >Sign up<svg width="24" height="24">
+                    <use class="iconFooter" href="./images/icons.svg#icon-icon-send"></use>
                     </svg>
-              </button>
+              </button> -->
           
             </form>
           </div>
