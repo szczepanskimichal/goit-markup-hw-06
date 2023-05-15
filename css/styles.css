@@ -673,7 +673,8 @@ h4 {
   flex-direction: column;
   justify-content: center;
   margin-left: 78px;
-  margin-top: 0;
+  margin-top: 10;
+  margin-bottom: 55px;
 }
 .newsletter button {
   background: #2196f3;
@@ -774,7 +775,7 @@ h4 {
   align-items: center;
   position: absolute;
     left: 50px;
-    top: 122px;
+    top: 121px;
 }
 .icon-phone{
   display: flex;
@@ -782,12 +783,12 @@ h4 {
   align-items: center;
   position: absolute;
   left: 66px;
-  top: 189px;
+  top: 186px;
 }
 .icon-mail{
   position: absolute;
   left: 66px;
-  top: 255px;
+  top: 251px;
 }
 .form-input:hover,
 .form-input:focus {
@@ -837,7 +838,7 @@ h4 {
 }
 .comment{
   width: 448px;
-height: 120px
+  height: 120px
 }
 .comment:hover,
 .comment:focus{
