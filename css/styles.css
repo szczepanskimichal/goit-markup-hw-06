@@ -764,32 +764,44 @@ h4 {
   /* margin-bottom: 10px; */
   padding: 11px 0 11px 42px;
   outline: 0;
-  position: absolute;
+  position: relative;
 }
 .icon-name{
-  
   margin-right: 15px;
   margin-left: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+    left: 50px;
+    top: 122px;
+}
+.icon-phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 66px;
+  top: 189px;
+}
+.icon-mail{
+  position: absolute;
+  left: 66px;
+  top: 255px;
 }
 .form-input:hover,
 .form-input:focus {
   border: 1px solid #2196F3;
   border-radius: 4px;
 }
-
 .form-input:hover + svg,
 .form-input:focus + svg {
-  fill: #2196F3;
-  
+  fill: #2196F3; 
 }
 .form-list {
   display: flex;
   flex-direction: column;
   height: 466px;
-  
 }
 .form-label {
   font-size: 12px;
@@ -798,12 +810,10 @@ h4 {
   color: #757575;
   margin-bottom: 4px;
   margin-top: 10px;
-  
   display: flex;
   flex-direction: column;
   outline: none;
 }
-
 .form-list svg {
   display: block;
   fill: #212121;
@@ -822,12 +832,23 @@ h4 {
   padding: 10px 76px;
   margin: 30px auto 0;
 }
-
 .form-button:hover {
   cursor: pointer;
+}
+.comment{
+  width: 448px;
+height: 120px
 }
 .comment:hover,
 .comment:focus{
   border: 1px solid #2196F3;
   border-radius: 4px;
+}
+.checkbox{
+  margin-top: 25px;
+}
+.regulamin,
+.politykęPrywatności{
+  color: #2196F3;
+  text-decoration: underline;
 }
