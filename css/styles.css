@@ -680,6 +680,11 @@ h4 {
   margin-left: 78px;
   margin-top: 10;
   margin-bottom: 55px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 .newsletter button {
   background: #2196f3;
@@ -780,7 +785,7 @@ h4 {
   align-items: center;
   position: absolute;
     left: 50px;
-    top: 121px;
+    top: 123px;
 }
 .icon-phone{
   display: flex;
@@ -788,12 +793,12 @@ h4 {
   align-items: center;
   position: absolute;
   left: 66px;
-  top: 186px;
+  top: 188px;
 }
 .icon-mail{
   position: absolute;
   left: 66px;
-  top: 251px;
+  top: 253px;
 }
 .form-input:hover,
 .form-input:focus {
@@ -838,8 +843,11 @@ h4 {
   padding: 10px 76px;
   margin: 30px auto 0;
 }
-.form-button:hover {
+.form-button:hover,
+.form-button:focus {
   cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .comment{
   width: 448px;
