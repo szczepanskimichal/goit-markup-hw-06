@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>homework5</title>
+    <title>homework6</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -94,7 +94,7 @@
       href="./images/icons.svg#icon-phone-black-18dp-1"
     ></use>
   </svg>
-</label>
+  </label>
   <label class="form-label" for="email">Email
   <input
     name="email"
@@ -107,28 +107,29 @@
       href="./images/icons.svg#icon-Vector"
     ></use>
   </svg>
-</label>
+  </label>
   <label class="form-label" for="comment">Komentarz</label>
   <textarea
     name="comment"
     class="comment"
     id="comment"
     placeholder="Wprowadź tekst"
+    rows="5"
   ></textarea>
   <div class="checkbox">
+    <div class="checkbox__control">
     <input
       name="check"
-      class="checkbox-input"
+      class="checkbox__input"
+      value="1"
       type="checkbox"
       id="check"
     />
-    <label for="check" class="checkbox-label">
-      Oświadczam iż akceptuję&nbsp;
-      <a class="regulamin" href="#" >Regulamin</a>
-      &nbsp;i&nbsp;
-      <a class="politykęPrywatności" href="#">Politykę Prywatności</a>.
-    </label>
-   
+    <label class="checkbox__label for="check"></label></div>
+
+    <!-- <label for="check" class="checkbox-label">Oświadczam iż akceptuję <a class="regulamin" href="#">Regulamin</a> i <a class="politykęPrywatności" href="#">Politykę Prywatności.</a>
+    </label> -->
+    
   </div>
   <button class="form-button" type="submit">Wyślij</button>
 </form>
