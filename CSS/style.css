@@ -147,6 +147,11 @@ body {
   align-items: center;
   justify-items: center;
 }
+.colorChange:hover,
+.colorChange:focus {
+  fill: var(--brand-blue);
+  color: var(--brand-blue);
+}
 
 /* SECTION with button */
 .section {
