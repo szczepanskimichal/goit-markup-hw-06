@@ -936,7 +936,6 @@ textarea:focus {
 .policy-checkbox {
   position: relative;
   gap: 8px;
-  margin-bottom: 30px;
 }
 .policy {
   font-weight: 400;
@@ -946,8 +945,8 @@ textarea:focus {
   color: #757575;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-right: 10px;
+  align-items: baseline;
+  margin-right: 1px;
 }
 .modal-links {
   text-decoration: underline;
@@ -959,6 +958,9 @@ textarea:focus {
   transform: translateX(50%);
   transform: scale(0);
   transition: 200ms;
+}
+.margin {
+  margin-right: 9px;
 }
 /* .checkbox {
   display: flex;
