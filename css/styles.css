@@ -53,7 +53,14 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-
+.portfolioBezBara:hover,
+.portfolioBezBara:focus {
+  color: #2196f3;
+}
+.pageHeader__agencyBezBara:hover,
+.pageHeader__agencyBezBara:focus {
+  color: #2196f3;
+}
 /* .pageHeader__agency:hover,
 .pageHeader__agency:focus {
   color: #2196f3;
@@ -62,6 +69,7 @@ body {
 } */
 .pageHeader__item--contacts {
   margin-right: 46px;
+  border: 2px;
 }
 .pageHeader__agency::after,
 .pageHeader__agency::after {
@@ -961,7 +969,7 @@ textarea:focus {
   color: #757575;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-right: 1px;
 }
 .modal-links {
@@ -974,9 +982,11 @@ textarea:focus {
   transform: translateX(50%);
   transform: scale(0);
   transition: 200ms;
+  border: 5px solid blue;
 }
 .margin {
   margin-right: 9px;
+  margin-bottom: 2px;
 }
 /* .checkbox {
   display: flex;
