@@ -895,10 +895,9 @@ textarea:focus {
 }
 .checkbox__input:checked + .checkbox__label {
   border-color: chartreuse;
-  background-color: teal;
 }
 .checkbox__input:checked + .checkbox__label::after {
-  border-color: yellow;
+  border-color: red;
 }
 /* .checkbox {
   display: flex;
