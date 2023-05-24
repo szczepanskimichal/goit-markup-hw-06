@@ -69,12 +69,13 @@
         <button data-modal-open type="button" class="button">
           Order the service
         </button>
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <!-- This is modal -->
             <div class="form-header-margin">
               <p class="form-header">Zostaw swoje dane w formularzu poniżej</p>
-              <form class="form-list">
+              <form class="form-list" autocomplete="on">
                 <label class="form-label" for="user_name"
                   >Imię
                   <input
@@ -82,6 +83,7 @@
                     class="form-input"
                     id="user_name"
                     type="text"
+                    required
                   />
                   <svg class="icon-name" width="12" height="12">
                     <use
@@ -96,6 +98,9 @@
                     class="form-input"
                     id="phone_number"
                     type="tel"
+                    title="Wprowadź numer w foracie 111-111-111"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    required
                   />
                   <svg class="icon-phone" width="13" height="13">
                     <use
@@ -110,20 +115,42 @@
                     class="form-input"
                     id="email"
                     type="email"
+                    class="input-text-box"
+                    required
                   />
                   <svg class="icon-mail" width="15" height="12">
                     <use href="./images/icons.svg#icon-Vector"></use>
                   </svg>
                 </label>
-                <label class="form-label" for="comment">Komentarz</label>
-                <textarea
-                  name="comment"
-                  class="comment"
-                  id="comment"
-                  placeholder="Wprowadź tekst"
-                  rows="5"
-                ></textarea>
-                <div class="checkbox">
+                <div>
+                  <label for="feedback" class="label">Komentarz</label>
+                  <textarea
+                    id="feedback"
+                    name="feedback"
+                    placeholder="Wprowadź tekst"
+                    rows="5"
+                    class="feedback"
+                  ></textarea>
+                </div>
+                <div class="policy-checkbox">
+                  <label id="policy" class="policy">
+                    <svg width="17px" height="16px" class="check-icon">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <input
+                      type="checkbox"
+                      for="policy"
+                      value="policy"
+                      required
+                    />
+                    <div>
+                      Oświadczam iż akceptuję
+                      <a href="" class="modal-links"> Regulamin</a> i
+                      <a href="" class="modal-links"> Politykę Prywatności</a>
+                    </div>
+                  </label>
+                </div>
+                <!-- <div class="checkbox">
                   <div class="checkbox__control">
                     <input
                       name="check"
@@ -132,12 +159,24 @@
                       type="checkbox"
                       id="check"
                     />
-                    <label class="checkbox__label" for="check"> </label>
+                    <div>
+                    <label class="checkbox__label" for="check"
+                      ><svg class="vector1" width="11" height="8">
+                        <use href="./images/icons.svg#icon-Vector-1"></use>
+                      </svg>
+                    </label>
+                  </div>
                   </div>
 
-                  <!-- <label for="check" class="checkbox-label">Oświadczam iż akceptuję <a class="regulamin" href="#">Regulamin</a> i <a class="politykęPrywatności" href="#">Politykę Prywatności.</a>
-    </label> -->
-                </div>
+                  <label for="check" class="checkbox-label"
+                    >Oświadczam iż akceptuję
+                    <a class="regulamin" href="#">Regulamin</a> i
+                    <a class="politykęPrywatności" href="#"
+                      >Politykę Prywatności.</a
+                    >
+                  </label>
+                  
+                </div> -->
                 <button class="form-button" type="submit">Wyślij</button>
               </form>
             </div>
