@@ -47,27 +47,24 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pageHeader__agency,
-.pageHeader__item--portfolio {
+.pageHeader__agency {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: #2196f3;
 }
 
-.pageHeader__agency:hover,
-.pageHeader__agency:focus,
-.pageHeader__item--portfolio:hover,
-.pageHeader__item--portfolio:focus {
+/* .pageHeader__agency:hover,
+.pageHeader__agency:focus {
   color: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .pageHeader__item--contacts {
   margin-right: 46px;
 }
-.pageHeader__agency:hover::after,
-.pageHeader__agency:focus::after {
+.pageHeader__agency::after,
+.pageHeader__agency::after {
   display: flex;
   justify-content: center;
   content: "";
