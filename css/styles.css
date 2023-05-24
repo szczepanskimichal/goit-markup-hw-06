@@ -954,11 +954,10 @@ textarea:focus {
 
 .check-icon {
   position: absolute;
-  left: 18px;
+  left: 16px;
   transform: translateX(50%);
   transform: scale(0);
   transition: 200ms;
-  left: 6px;
   top: 3px;
   cursor: pointer;
 }
