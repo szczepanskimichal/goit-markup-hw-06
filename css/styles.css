@@ -747,22 +747,6 @@ h4 {
   fill: #eeeeee;
 }
 
-/* .overlay {
-  background-color: rgba(33, 150, 243, 0.9);
-  width: 100%;
-  height: 100%;
-  font-size: 18px;
-  color: #fff;
-  letter-spacing: 0.03em;
-  line-height: 1.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 49px 45px 49px 24px;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
-} */
 .form-header-margin {
   margin-left: 40px;
   margin-right: 40px;
