@@ -966,6 +966,9 @@ textarea:focus {
   text-decoration: underline;
   color: #2196f3;
 }
+.policy:has(input:checked) .check-icon {
+  transform: scale(1);
+}
 .check-icon {
   position: absolute;
   left: 18px;
