@@ -966,15 +966,15 @@ textarea:focus {
   text-decoration: underline;
   color: #2196f3;
 }
-.policy:has(input:checked) .check-icon {
-  transform: scale(1);
-}
+
 .check-icon {
   position: absolute;
   left: 18px;
-  transform: translateX(-50%);
+  transform: translateX(50%);
   transform: scale(0);
   transition: 200ms;
+  left: 6px;
+  top: 3px;
 }
 .policy input {
   appearance: none;
@@ -984,6 +984,13 @@ textarea:focus {
   border-radius: 4px;
   margin-right: 7px;
 }
+.policy input:checked {
+  border-color: rgb(255, 255, 255);
+}
+.policy:has(input:checked) .check-icon {
+  transform: scale(1);
+}
+
 .margin {
   margin-right: 9px;
   margin-bottom: 2px;
