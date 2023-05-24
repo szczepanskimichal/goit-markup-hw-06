@@ -76,8 +76,20 @@ body {
   margin-top: 24px;
   position: absolute;
 }
-.pageHeader__item--portfolio:hover::after,
-.pageHeader__item--portfolio:focus::after {
+.portfolioBezBara {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.pageHeader__portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.pageHeader__portfolio::after,
+.pageHeader__portfolio::after {
   display: flex;
   justify-content: center;
   content: "";
@@ -89,11 +101,11 @@ body {
   margin-top: 24px;
   position: absolute;
 }
-.pageHeader__item--portfolio:hover::after,
+/* .pageHeader__item--portfolio:hover::after,
 .link--portfolio:hover::after {
   display: flex;
   color: #2196f3;
-}
+} */
 .pageHeader__mailto {
   font-weight: 500;
   font-size: 14px;
