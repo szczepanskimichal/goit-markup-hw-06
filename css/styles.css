@@ -984,6 +984,6 @@ textarea:focus {
 .signUp:focus {
   cursor: pointer;
 }
-.oswiadczenie {
+.statement {
   color: rgba(117, 117, 117, 1);
 }
