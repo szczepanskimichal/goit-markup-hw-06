@@ -76,6 +76,12 @@ body {
   margin-top: 24px;
   position: absolute;
 }
+.pageHeader__agencyBezBara {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
 .portfolioBezBara {
   font-weight: 500;
   font-size: 14px;
